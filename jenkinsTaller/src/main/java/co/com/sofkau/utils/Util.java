@@ -37,6 +37,10 @@ public class Util {
         return list.get(randomIdx);
     }
 
+    public static <T> int escogerIndexAleatorio(List<T> list) {
+        Random random = new Random();
+        return random.nextInt(list.size());
+    }
 
 
     public static String obtenerTituloAleatorio() {
